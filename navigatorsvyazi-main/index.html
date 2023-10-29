@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Экскурсия по колледжу</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="VKSIT.ico" type="image/x-icon">
+</head>
+<body>
+	<script src='navigator.js'></script>
+    <header class="site-header">
+        <div class="container">
+          <div class="site-branding">
+            <a href="landingpage.html">
+              <img src="VKSIT.ico" alt="Logo" style="width: 54px;margin-left: 60px;">
+            </a>
+          </div>
+          <nav class="site-navigation">
+            <ul>
+              <li><a href="landingpage.html">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="site-contact-info">
+            <span class="phone-number">+7 (123) 456-78-90</span>
+          </div>
+        </div>
+      </header>
+	<main>
+		<div class="cabinets">
+			<p class="cabinettext">Выберите кабинет: </p>
+			<select size="1" id="selectCAB" onchange="auditorySelect()">
+	<option value="w" id="choose">Выберите кабинет</option>
+	<option id="cab_12" value="12">
+		<div class="cab_12">
+		Кабинет 12. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_13" value="13">
+		<div class="cab_13">
+		Кабинет 13. 2 Этаж
+		</div>	
+		</option>
+	<option id="cab_14" value="14">
+		<div class="cab_14">
+		Кабинет 14. 2 Этаж
+		</div>	
+		</option>
+	<option id="cab_16" value="16">
+		<div class="cab_16">
+		Кабинет 16. 2 Этаж
+		</div>	
+		</option>
+	<option id="cab_17" value="17">
+		<div class="cab_17">
+		Кабинет 17. 2 Этаж
+		</div>	
+		</option>
+	<option id="cab_18" value="18">
+		<div class="cab_18">
+		Кабинет 18. 2 Этаж
+		</div>	
+		</option>
+	<option id="cab_19" value="19">
+		<div class="cab_19">
+		Кабинет 19. 2 Этаж
+	</div>
+		</option>
+	<option id="cab_22" value="22">
+		<div class="cab_22">
+		Кабинет 22. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_23" value="23">
+		<div class="cab_23">
+		Кабинет 23. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_24" value="24">
+		<div class="cab_24">
+		Кабинет 24. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_25" value="25">
+		<div class="cab_25">
+		Кабинет 25. 3 Этаж
+		</div>
+		</option>
+	<option id="cab_26" value="26">
+		<div class="cab_26">
+		Кабинет 26. 3 Этаж
+		</div>
+		</option>
+	<option id="cab_101" value="101">
+		<div class="cab_101">
+		Кабинет 101. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_102" value="102">
+		<div class="cab_102">
+		Кабинет 102. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_103" value="103">
+		<div class="cab_103">
+		Кабинет 103. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_105" value="105">
+		<div class="cab_105">
+		Кабинет 105. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_106" value="106">
+		<div class="cab_106">
+		Кабинет 106. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_107" value="107">
+		<div class="cab_107">
+		Кабинет 107. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_108" value="108">
+		<div class="cab_108">
+		Кабинет 108. 2 Этаж
+		</div>
+	</option>
+	<option id="cab_109" value="109">
+		<div class="cab_109">
+		Кабинет 109. 2 Этаж
+		</div>
+		</option>
+	<option id="cab_110" value="110">
+		<div class="cab_110">
+		Кабинет 110. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_111" value="111">
+		<div class="cab_111">
+		Кабинет 111. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_112" value="112">
+		<div class="cab_112">
+		Кабинет 112. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_113" value="113">
+		<div class="cab_113">
+		Кабинет 113. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_114" value="114">
+		<div class="cab_114">
+		Кабинет 114. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_115" value="115">
+		<div class="cab_115">
+		Кабинет 115. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_116" value="116">
+		<div class="cab_116">
+		Кабинет 116. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_117" value="117">
+		<div class="cab_117">
+		Кабинет 117. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_118" value="118">
+		<div class="cab_118">
+		Кабинет 118. 1 Этаж
+		</div>
+		</option>
+	<option id="cab_119" value="119">
+		<div class="cab_119">
+		Кабинет 119. 1 Этаж
+		</div>
+		</option>
+	</div>
+	<option id="gym" value="gym">
+		<div class="gym">
+		Тренажерный зал. 1 Этаж
+		</div>
+		</option>
+		<option value="gym1" id="gym1">
+			<div class="gym1">
+				Спортивный зал. 1 Этаж
+			</div>
+		</option>
+	<option id="canteen" value="canteen">
+		<div class="cab_canteen">
+		Столовая. 1 Этаж
+		</div>
+	</option>
+		</select>
+			</div> 
+		<!-- cabinets -->
+
+		<div class="imgs">
+			<img src="cab/cab12.jpg" alt="" class="cabimg_12 hidden" id="cabimg">
+			<img src="cab/cab13.jpg" alt="" class="cabimg_13 hidden" id="cabimg">
+			<img src="cab/cab14.jpg" alt="" class="cabimg_14 hidden" id="cabimg">
+			<img src="cab/cab16.jpg" alt="" class="cabimg_16 hidden" id="cabimg">
+			<img src="cab/cab17.jpg" alt="" class="cabimg_17 hidden" id="cabimg">
+			<img src="cab/cab18.jpg" alt="" class="cabimg_18 hidden" id="cabimg">
+			<img src="cab/cab19.jpg" alt="" class="cabimg_19 hidden" id="cabimg">
+			<img src="cab/cab22.jpg" alt="" class="cabimg_22 hidden" id="cabimg">
+			<img src="cab/cab23.jpg" alt="" class="cabimg_23 hidden" id="cabimg">
+			<img src="cab/cab24.jpg" alt="" class="cabimg_24 hidden" id="cabimg">
+			<img src="cab/cab25.jpg" alt="" class="cabimg_25 hidden" id="cabimg">
+			<img src="cab/cab26.jpg" alt="" class="cabimg_26 hidden" id="cabimg">
+			<img src="cab/cab101.jpg" alt="" class="cabimg_101 hidden" id="cabimg">
+			<img src="cab/cab102.jpg" alt="" class="cabimg_102 hidden" id="cabimg">
+			<img src="cab/cab103.jpg" alt="" class="cabimg_103 hidden" id="cabimg">
+			<img src="cab/cab105.jpg" alt="" class="cabimg_105 hidden" id="cabimg">
+			<img src="cab/cab106.jpg" alt="" class="cabimg_106 hidden" id="cabimg">
+			<img src="cab/cab107.jpg" alt="" class="cabimg_107 hidden" id="cabimg">
+			<img src="cab/cab108.jpg" alt="" class="cabimg_108 hidden" id="cabimg">
+			<img src="cab/cab109.jpg" alt="" class="cabimg_109 hidden" id="cabimg">
+			<img src="cab/cab110.jpg" alt="" class="cabimg_110 hidden" id="cabimg">
+			<img src="cab/cab111.jpg" alt="" class="cabimg_111 hidden" id="cabimg">
+			<img src="cab/cab112.jpg" alt="" class="cabimg_112 hidden" id="cabimg">
+			<img src="cab/cab113.jpg" alt="" class="cabimg_113 hidden" id="cabimg">
+			<img src="cab/cab114.jpg" alt="" class="cabimg_114 hidden" id="cabimg">
+			<img src="cab/cab115.jpg" alt="" class="cabimg_115 hidden" id="cabimg">
+			<img src="cab/cab116.jpg" alt="" class="cabimg_116 hidden" id="cabimg">
+			<img src="cab/cab117.jpg" alt="" class="cabimg_117 hidden" id="cabimg">
+			<img src="cab/cab118.jpg" alt="" class="cabimg_118 hidden" id="cabimg">
+			<img src="cab/cab119.jpg" alt="" class="cabimg_119 hidden" id="cabimg">
+			<img src="cab/gym.jpg" alt="" class="gymimg hidden" id="cabimg">
+			<img src="cab/gym1.jpg" alt="" class="gym1img hidden" id="cabimg">
+			<img src="cab/canteen.jpg" alt="" class="cabimg_canteen hidden" id="cabimg">
+		</div>
+	</main>
+
+    <footer>
+    	<a href="landingpage.html" class="btn" style="margin-left: 800px">Вернуться назад</a>
+    </footer>
+</body>
+</html>

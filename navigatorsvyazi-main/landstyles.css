@@ -1,0 +1,96 @@
+.site-header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .site-branding img {
+    max-height: 50px;
+  }
+  
+  .site-navigation ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .site-navigation li {
+    margin: 0 10px;
+  }
+  
+  .site-navigation li:first-child {
+    margin-left: 0;
+  }
+  
+  .site-navigation li:last-child {
+    margin-right: 0;
+  }
+  
+  .site-navigation a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .site-contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-number {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  body {
+    background: #d6eaf8;
+  }
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+  }
+  .btn:hover {
+    background-position: right center;
+  }
+
+  .text1 {
+    display: flex;
+    justify-content: center;
+  }
+  .text2 {
+    display: flex;
+    justify-content: center;
+  }
+  .text3 {
+    display: flex;
+    justify-content: center;
+  }
